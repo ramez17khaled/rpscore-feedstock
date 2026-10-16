@@ -1,5 +1,5 @@
 {% set name = "rpscore" %}
-{% set version = "6.8.2" %}
+{% set version = "6.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rpscore/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d82bc965b4732c343d564f64fd1a46d9c568fbad4254ad44866c3fec7007d880
+  sha256: 48c939f9b1f241678ad69ca17ab13275ed46c3b03c336313be269b15fa65b7e2
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - scikit-learn
     - xgboost =3.0.2
     - brs_utils >=1.26.0
-    - rplibs >=6.9.3
+    - rplibs >=6.9.5
 
 test:
   requires:
